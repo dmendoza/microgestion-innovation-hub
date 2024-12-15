@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot App",
+            "request": "launch",
+            "mainClass": "com.microgestion.example.rag.DatabaseFacadeRestApiApplication",
+            "projectName": "database-facade-rest-api",
+            "env": {
+                "DB_URL": "jdbc:oracle:thin:@//host.docker.internal:1521/FREE",
+                "DB_USERNAME": "TEMPBECAS",
+                "DB_PASSWORD": "password"
+            }
+        }
+    ]
+}

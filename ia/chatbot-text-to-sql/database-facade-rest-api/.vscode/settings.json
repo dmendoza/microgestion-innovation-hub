@@ -1,0 +1,12 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "java.debug.settings.onBuildFailureProceed": true
+}

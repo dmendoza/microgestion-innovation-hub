@@ -1,0 +1,29 @@
+{
+    "name": "Database Facade API Development",
+    "dockerFile": "Dockerfile",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "vmware.vscode-spring-boot",
+                "redhat.vscode-yaml",
+                "vscjava.vscode-lombok",
+                "github.copilot"
+            ],
+            "settings": {
+                "java.configuration.updateBuildConfiguration": "automatic",
+                "java.compile.nullAnalysis.mode": "automatic",
+                "java.format.settings.url": ".vscode/java-formatter.xml",
+                "editor.formatOnSave": true,
+                "editor.codeActionsOnSave": {
+                    "source.organizeImports": "always"
+                }
+            }
+        }
+    },
+    "forwardPorts": [
+        8080
+    ],
+    "postCreateCommand": "mvn clean install",
+    "remoteUser": "vscode"
+}

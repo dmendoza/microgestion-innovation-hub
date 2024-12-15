@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: database-facade-rest-api
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: oracle.jdbc.OracleDriver
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 5
+  
+server:
+  port: 8080
+  
+logging:
+  level:
+    root: INFO
+    # com.microgestion.example.rag: INFO
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
